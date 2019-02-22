@@ -4,7 +4,7 @@
 <br/>
 *last update January 2019*
 
-## Description:
+## Description
 
 Reproduction of a webpage based on an image
 <br/>
