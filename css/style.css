@@ -15,14 +15,34 @@ body button {
 body h3 {
   margin: 30px;
 }
+body h2 {
+  margin: 20px;
+}
 body p {
   margin: 30px;
 }
 body h1 {
   margin: 20px;
+  text-align: center;
 }
 body canvas {
   margin: 0 40px;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #444;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 10px;
+  background: #bbb;
 }
 
 #challenge {
