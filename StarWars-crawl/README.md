@@ -10,7 +10,7 @@ A Star Wars Crawl like exercice using Html/Css
 <br/>
 [page](https://amondt.github.io/learn-HTML-CSS-MD/StarWars-crawl/index.html)
 
-![Generiue de star wars](images/star-wars.jpg)
+![Generiue de star wars](./img/star-wars.jpg)
 
 ## Objectifs
 
