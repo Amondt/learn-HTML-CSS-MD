@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, rgba(32,32,32,0) 0%, rgba(32,32,32,0.28) 14%, rgba(0,0,0,0.57) 49%, rgba(0,0,0,1) 100%);
+}
+header{
+    background-image: url("img/bande.jpg");
+    background-position-y: 31%;
+}
+#head{
+    width: 800px;
+    margin: auto;
+    height: 150px;
+}
+#icon{
+    display: inline-block;
+    position: relative;
+    left: 715px;
+    top: 30px;
+}
+a{
+    display: inline-block;
+    position: relative;
+    filter: grayscale(100%);
+}
+a:hover{
+    transform: scale(1.2)
+}
+img{
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+}
+#page{
+    width: 800px;
+    margin: auto;
+    padding: 40px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 500px 1fr;
+    grid-template-areas:
+        "a b"
+        "c b"
+        "d d";
+    background: #3A3A3A;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black, -1px 1px 5px black;
+}
+#citation{
+    grid-area: a;
+}
+.citation{
+    border-left: 3px solid #386DA2;
+    padding: 0 0 0 20px;
+}
+#present{
+    grid-area: c;
+}
+#photo{
+    grid-area: b;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 50%;
+    width: 200px;
+}
+#info{
+    grid-area: d;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 5fr 4fr;
+    grid-template-areas:
+        "a b"
+        "c d";
+}
+#birth{
+    grid-area: a;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    grid-template-areas:
+        "a b";
+}
+#phone{
+    grid-area: b;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    grid-template-areas:
+        "a b";
+}
+#email{
+    grid-area: c;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    grid-template-areas:
+        "a b";
+}
+#cv{
+    grid-area: d;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    grid-template-areas:
+        "a b";
+}
+h1{
+    position: relative;
+    left: -15px;
+    top: 85px;
+    font-weight: 800;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px rgb(185, 185, 185);
+    margin: 0;
+    padding: 0;
+}
+h2{
+    position: relative;
+    left: 15px;
+    top: 75px;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+p{
+    color: #FEFAF9;
+    font-size: 16px;
+}
+.right-pos{
+    position: relative;
+    text-align: center;
+    top: 8px;
+}
+.txt-enfonce{
+    grid-area: a;
+    border: 1px solid black;
+    padding: 8px;
+    box-shadow: 1px 1px 1px rgb(22, 22, 22) inset;
+    text-align: center;
+    background-color: #202020;
+}
+#icon-pos{
+    position: relative;
+    top: 5px;
+    margin: auto;
+
+}

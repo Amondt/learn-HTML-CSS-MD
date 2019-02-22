@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("img/broken_glass.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+main{
+    width: 35%;
+    padding-top: 8%;
+    float: right;
+    display: grid;
+    grid-template: 300px 275px 60px / auto;
+    grid-template-areas: 
+        "a"
+        "b"
+        "c";
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-weight: 400;
+}
+.top{
+    grid-area: a;
+    align-self: end;
+}
+.center{
+    grid-area: b;
+    align-self: center;
+}
+.bot{
+    grid-area: c;
+    align-self: start;
+}
+h1{
+    font-size: 300px;
+    color: #447F6F;
+}
+h2{
+
+    font-size: 275px;
+    color: #447F6F;
+}
+p{
+    font-size: 60px;
+    color: #AACCC3;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: xx-large;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: #AACCC3;
+    border: 1px solid #AACCC3;
+    padding: 10px 40px;
+    text-align: center;
+    border-radius: 3px;
+}
+a span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+a span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    right: -40px;
+    transition: 0.5s;
+}
+a:hover span{
+    padding-right: 0px;
+    color: #447F6F;
+} 
+a:hover span:after{
+    opacity: 1;
+    right: -20px;
+}

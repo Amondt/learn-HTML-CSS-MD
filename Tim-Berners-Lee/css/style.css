@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Body part */
+body {
+  background-color: #EAEAEA;
+  padding-top: 0px;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+}
+
+p {
+  text-align: justify;
+  color: #7C7F8B;
+  font-weight: 400;
+}
+
+/* Headers */
+h1, h2, h3 {
+  text-align: center;
+  font-weight: 800;
+}
+
+h1 {
+  color: #EC394B;
+}
+
+h2 {
+  color: #7C7F8B;
+}
+
+h3 {
+  color: #7C7F8B;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  width: 580px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0px 3px 15px 0px #DADADA;
+}
+
+.intro {
+  text-align: center;
+}
+.intro a {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #EC394B;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.intro a:hover {
+  background-color: #dddddd;
+  color: #EC394B;
+}
+
+.tim {
+  display: block;
+  position: relative;
+  margin: auto;
+  filter: grayscale(1);
+  border-radius: 50%;
+  border: 5px solid #CBCBCB;
+}
+
+li {
+  display: inline-block;
+}
+li:hover {
+  transform: scale(1.2);
+}
+
+.icon {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 50px 100px;
+}
+.icon a {
+  color: #C7C7C7;
+}
+
+i {
+  transform: scale(2);
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.movies {
+  display: grid;
+  grid-gap: 30px;
+  grid-template: 100px repeat(3, 1fr)/auto auto;
+  grid-template-areas: "h   h" "i1 p1" "i2 p2" "i3 p3";
+}
+.movies h2 {
+  grid-area: h;
+}
+
+.odissey-img {
+  grid-area: i1;
+}
+
+.odissey-txt {
+  grid-area: p1;
+}
+
+.hulot-img {
+  grid-area: i2;
+}
+
+.hulot-txt {
+  grid-area: p2;
+}
+
+.alien-img {
+  grid-area: i3;
+}
+
+.alien-txt {
+  grid-area: p3;
+}
+
+@media only screen and (max-width: 400px) {
+  .main {
+    width: 300px;
+  }
+
+  .icon {
+    padding: 50px 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    width: 380px;
+  }
+
+  .icon {
+    padding: 50px 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

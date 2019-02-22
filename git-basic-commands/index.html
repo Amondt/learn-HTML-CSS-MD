@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Git bases</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <aside>
+            <a href="#createclone">create &amp; clone</a>
+            <a href="#addremove">add &amp; remove</a>
+            <a href="#commitsynchronize">commit &amp; synchronize</a>
+            <a href="#branches">branches</a>
+            <a href="#merge">merge</a>
+            <a href="#tagging">tagging</a>
+            <a href="#restore">restore</a>
+        </aside>
+        <main>
+            <h1 id="title">Commandes git de base</h1>
+            <h2 id="createclone">create &amp; clone</h2>
+            <p class="left-txt">create new repository</p>
+            <p class="right-txt"><strong>git init</strong></p>
+            <p class="left-txt">clone local repository </p>
+            <p class="right-txt"><strong>git clone /path/to/repository</strong></p>
+            <p class="left-txt">clone remote repository </p>
+            <p class="right-txt"><strong>git clone usemame@host:/path/to/repository</strong></p>
+            <hr/>
+            <h2 id="addremove">add &amp; remove</h2>
+            <p class="left-txt">add changes to INDEX </p>
+            <p class="right-txt"><strong>git add <filename></strong></p>
+            <p class="left-txt">add all changes to INDEX </p>
+            <p class="right-txt"><strong>git add *</strong></p>
+            <p class="left-txt">remove/delete </p>
+            <p class="right-txt"><strong>git rm <filename></strong></p>
+            <hr/>
+            <h2 id="commitsynchronize">commit &amp; synchronize</h2>
+            <p class="left-txt">commit changes </p>
+            <p class="right-txt"><strong>git commit -m "Commit message"</strong></p>
+            <p class="left-txt">push changes to remote repository </p>
+            <p class="right-txt"><strong>git push origin master</strong></p>
+            <p class="left-txt">connect local repository to remote repository </p>
+            <p class="right-txt"><strong>git remote add origin <server></strong></p>
+            <p class="left-txt">update local repository with remote changes </p>
+            <p class="right-txt"><strong>git pull</strong></p>
+            <hr/>
+            <h2 id="branches">branches</h2>
+            <p class="left-txt">create new branch </p>
+            <p class="right-txt"><strong>git checkout -b <branch></strong> <em>(e.g. git checkout -b feature</em>x)</p>
+            <p class="left-txt">switch to master branch </p>
+            <p class="right-txt"><strong>git checkout master</strong></p>
+            <p class="left-txt">delete branch </p>
+            <p class="right-txt"><strong>git branch -d <branch></strong></p>
+            <p class="left-txt">push branch to remote repository </p>
+            <p class="right-txt"><strong>git push origin <branch></strong></p>
+            <hr/>
+            <h2 id="merge">merge</h2>
+            <p class="left-txt">merge changes from another branch </p>
+            <p class="right-txt"><strong>git merge <branch>io</strong></p>
+            <p class="left-txt">view changes between two branches </p>
+            <p class="right-txt"><strong>git diff <source_branch> <target branch></strong> <em>(e.g. git diff feature</em>x feature<em>y)</em></p>
+            <hr/>
+            <h2 id="tagging">tagging</h2>
+            <p class="left-txt">create tag </p>
+            <p class="right-txt"><strong>git tag <tag> <mmit ID></strong> <em>(e.g. git tag 1.0.0 1b2e1d63ff)</em></p>
+            <p class="left-txt">get commit IDs </p>
+            <p class="right-txt"><strong>git log</strong></p>
+            <hr/>
+            <h2 id="restore">restore</h2>
+            <p class="left-txt">replace working copy with latest from HEAD </p>
+            <p class="right-txt"><strong>git checkout -- &lt; filename ></strong></p>
+            <hr/>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

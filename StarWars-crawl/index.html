@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>L'escargot tout chaud</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+</head>
+<body>
+    <script type='text/javascript'>
+        var sound = document.createElement('audio')
+        sound.id = 'audio'
+        sound.src = 'audio/epic.mp3'
+        sound.type = 'audio/mpeg'
+        document.body.appendChild(sound)
+        function playAudio() {
+            document.getElementById('audio').play();
+        }
+        function pauseAudio() {
+            document.getElementById('audio').pause();
+        }
+        function audioVolumeIn(q){
+            if(q.volume){
+                var InT = 0;
+                var setVolume = 0.2; // Target volume level for new song
+                var speed = 0.005; // Rate of increase
+                q.volume = InT;
+                var eAudio = setInterval(function(){
+                    InT += speed;
+                    q.volume = InT.toFixed(1);
+                    if(InT.toFixed(1) >= setVolume){
+                        clearInterval(eAudio);
+                        //alert('clearInterval eAudio'+ InT.toFixed(1));
+                    };
+                },50);
+            };
+        };
+        function audioVolumeOut(q){
+            if(q.volume){
+                var InT = 0.4;
+                var setVolume = 0;  // Target volume level for old song 
+                var speed = 0.005;  // Rate of volume decrease
+                q.volume = InT;
+                var fAudio = setInterval(function(){
+                    InT -= speed;
+                    q.volume = InT.toFixed(1);
+                    if(InT.toFixed(1) <= setVolume){
+                        clearInterval(fAudio);
+                        //alert('clearInterval fAudio'+ InT.toFixed(1));
+                    };
+                },50);
+            };
+        };
+        setTimeout("playAudio()", 10000);
+        // setTimeout("pauseAudio()", 60000);
+        setTimeout("audioVolumeOut(document.getElementById('audio'))", 60000);
+    </script>
+    <div class="fade"></div>
+    <div class="intro">
+        <h2>Il y a fort longtemps, <br>sur une planète lointaine ...</h2>
+        <div class="logo-becode"><img src="img/BeCodeLogo.png" alt="BeCode logo"></div>
+    </div>
+    <div class="star-wars">
+        <div class="crawl">
+            <div class="title">
+                <p>Episode IV</p>
+                <h1>L'escargot tout chaud</h1>
+            </div>
+            <p>L'escargot était prêt pour partir en vacances, il avait sur lui de l'eau, son passeport et un peu d'argent.</p> <br>
+            <p>Il sortit de chez lui mais malheureusement, il oublia ses clés. blabla.</p> <br>
+            <p>"Marceeeeeel" cria l'escargot à son voisin, "**Puis-je t'emprunter ton bulldozer? **" D'un mouvement souple et gracieux, l'escargot attrapa le trousseau de clefs lancé par Marcel. "VROUM-VROUM" fit l'engin au démarrage.</p> <br>
+            <p>L'escargot sur son bulldozer prit la direction du sud. Il rêvait de plage de sable chaud et de jolies filles en bikini. Dans sa tête, une seule destination pour réaliser ses rêves : SAINT-TROPEZ</p> <br>
+            <p>L'escargot décida d'emprunter les chemins du glamour, de la gloire et la beauté. Le grand flot bleu.</p> <br>
+            <p>Aujourd'hui l'escargot tient un bar à SAINT-TROPEZ, il mange du fromage à la petite cuillère et boit des cocktails à base de coco. Son voisin attend encore son bulldozer.</p> <br>
+        </div>
+    </div>
+</body>
+</html>

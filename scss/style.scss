@@ -1,0 +1,53 @@
+* {
+    text-decoration: none;
+    color: #111;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ddd;
+    padding: 20px;
+    button{
+        margin: 0px 20px;
+        padding: 0.5rem;
+    }
+    h3{
+        margin: 30px;
+    }
+    p{
+        margin: 30px;
+    }
+    h1 {
+        margin: 20px;
+    }
+    canvas {
+        margin: 0 40px;
+    }
+}
+#challenge {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+}
+form {
+    margin: 40px;
+}
+.redSquare{
+    width: 100px;
+    height: 100px;
+    background: red;    
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.color{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin : 5px;
+}

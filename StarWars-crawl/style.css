@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: url("img/stars-bg.jpg") center center;
+    background-size: cover;
+    background-color: #000;
+}
+.fade {
+    position: relative;
+    width: 100%;
+    min-height: 15vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+  }
+.intro{
+    position: relative;
+    font-family: 'Righteous', cursive;
+    color: #40C3D2;
+    font-size: 200%;
+    font-weight: 600;
+}
+.logo-becode{
+    position: relative;
+    margin: auto;
+    width: 300px;
+    top: 50px;
+    border: 1px solid white;
+    opacity: 0;
+    animation: logo 5s linear;
+}
+h2{
+    position: relative;
+    top: 250px;
+    text-align: center;
+    opacity: 0;
+    animation: intro 10s linear;
+}
+.star-wars{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 22%;
+    height: 200px;
+    perspective: 400px;
+
+    font-family: 'Righteous', cursive;
+    color: rgb(235, 197, 28);
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    text-align: justify;
+}
+.crawl{
+    position: relative;
+    top: 99999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+}
+.crawl > .title {
+    font-size: 90%;
+    text-align: center;
+}
+.crawl > .title h1 {
+    margin: 0 0 100px;
+    text-transform: uppercase;
+}
+@keyframes crawl{
+    0%      {top: 1000px; transform: rotateX(50deg) translateZ(0);}
+    20%     {top: 1000px; transform: rotateX(50deg) translateZ(0);}
+    96%     {opacity: 1;}
+    100%    {top: -6000px; transform: rotateX(45deg) translateZ(-5000px); opacity: 0;}
+
+}
+@keyframes logo{
+    0%      {opacity: 0;}
+    30%     {opacity: 1;}
+    70%     {opacity: 1;}
+    100%    {opacity: 0;}
+}
+@keyframes intro{
+    0%      {opacity: 0;}
+    50%     {opacity: 0;}
+    65%     {opacity: 1;}
+    85%     {opacity: 1;}
+    100%    {opacity: 0;}
+}
