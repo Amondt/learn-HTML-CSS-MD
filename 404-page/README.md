@@ -1,8 +1,8 @@
-# 404_page
+# 404-page
 *created by A. Mondt*
 *last update February 2019*
 
-## Description:
+## Description
 
 404 error page creation
 <br/>
