@@ -20,7 +20,7 @@ body {
         margin: 30px;
     }
     h1 {
-        margin: 20px;
+        margin: 40px;
         text-align: center;
     }
     canvas {
@@ -41,6 +41,13 @@ body {
     margin: 10px;
     padding: 10px;
     background: #bbb;
+    text-align: center;
+}
+button{
+    color: rgb(45, 126, 192);
+}
+button:hover{
+    color: #2D36C0;
 }
 #challenge {
     display: flex;

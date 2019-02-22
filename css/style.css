@@ -22,7 +22,7 @@ body p {
   margin: 30px;
 }
 body h1 {
-  margin: 20px;
+  margin: 40px;
   text-align: center;
 }
 body canvas {
@@ -43,6 +43,15 @@ body canvas {
   margin: 10px;
   padding: 10px;
   background: #bbb;
+  text-align: center;
+}
+
+button {
+  color: #2d7ec0;
+}
+
+button:hover {
+  color: #2D36C0;
 }
 
 #challenge {
