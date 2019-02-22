@@ -1,13 +1,32 @@
 # 404_page
 *created by A. Mondt*
-*last update January 2019*
+*last update February 2019*
 
 ## Description:
 
 404 error page creation
 <br/>
-[page](https://amondt.github.io/404_page/)
+[page](https://amondt.github.io/learn-HTML-CSS-MD/404-page/index.html)
 
-## Instructions:
+## Objectifs
 
-* [link](https://github.com/becodeorg/BXL-Lovelace-3.9/blob/master/01-La-prairie/html-css/4-exercice-404-html.md)
+- Améliorer la sémantique HTML
+- Connaître plus de propriété CSS
+- Améliorer ses compétences en positionement CSS
+
+## Instructions 
+
+- Voici quelques [inspirations](https://www.google.be/search?q=landing+page&espv=2&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwjmvai3v6zTAhVBCSwKHfOIAGMQ_AUIBigB&biw=1250&bih=703#tbm=isch&q=404+page)
+- Faire un nouveau projet sur GitHub nommé **"404 Page"**
+- Réaliser votre **Page 404** en **HTML** et **CSS**
+- Créer un bouton **"retour"** qui dirige vers votre profile GitHub 
+- Mettre en ligne grâce à [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)
+
+## Bonus
+
+- Ajouter une animation quand on passe la souris sur un élément
+
+## Ressources 
+
+- [CSS3 Animations](https://www.w3schools.com/css/css3_animations.asp)
+- [animate.css](https://daneden.github.io/animate.css/)
