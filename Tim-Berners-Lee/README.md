@@ -43,7 +43,7 @@ Faire les actions suivantes dans le dossier **"starting-web-developpment"**
 - Télécharger cette image dans le dossier **images** : ![monsieur hulot](http://lewagon.github.io/html-css-challenges/shared/images/monsieur-hulot.jpg)
 - Télécharger cette image dans le dossier image : ![alien](http://lewagon.github.io/html-css-challenges/shared/images/alien.jpg)
 
-- Dans **index.html** écrire du code HTML dont le résultat doit correspondre exactement à cette image ![Goal CSS](images/goal-html.png)
+- Dans **index.html** écrire du code HTML dont le résultat doit correspondre exactement à cette image ![Goal CSS](./img/goal-html.png)
   - Lien vers la page Wikipedia de Tim Berners-Lee : https://fr.wikipedia.org/wiki/Tim_Berners-Lee
   - Pour avoir les icones utiliser ceci : 
   ```html
@@ -53,7 +53,7 @@ Faire les actions suivantes dans le dossier **"starting-web-developpment"**
 
 ### Étape 3 : CSS
 
-- Faire de sorte que votre page ressemble à celle-ci ![Goal CSS](images/goal-css.png)
+- Faire de sorte que votre page ressemble à celle-ci ![Goal CSS](./img/goal-css.png)
 - Pour avoir une jolie typographie utiliser ceci : 
 ```html
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700">
