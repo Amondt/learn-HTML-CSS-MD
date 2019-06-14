@@ -5,14 +5,14 @@
 }
 
 body {
-    background: rgb(60,59,63);
-    background: linear-gradient(90deg, rgba(60,59,63,1) 0%, rgba(96,94,102,1) 15%, rgba(96,94,102,1) 85%, rgba(60,59,63,1) 100%);
+    background: #FEFEFE);
+    /* background: linear-gradient(90deg, rgba(60,59,63,1) 0%, rgba(96,94,102,1) 15%, rgba(96,94,102,1) 85%, rgba(60,59,63,1) 100%); */
     font-family: 'Oxygen', sans-serif;
     padding: 20px;
 }
 
 .page {
-    width: 800px;
+    width: 750px;
     margin: auto;
     display: grid;
     grid-template-columns: 3fr 5fr;
